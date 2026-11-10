@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Pole Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h1>Smart Pole Monitoring and Control</h1>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Temperature</h3>
+        <p id="temperature">-- °C</p>
+    </div>
+
+    <div class="card">
+        <h3>Voltage</h3>
+        <p id="voltage">-- V</p>
+    </div>
+
+    <div class="card">
+        <h3>Current</h3>
+        <p id="current">-- A</p>
+    </div>
+
+    <div class="card">
+        <h3>Power</h3>
+        <p id="power">-- W</p>
+    </div>
+
+</div>
+
+<h2>Lamp Control</h2>
+
+<button onclick="turnOn()">TURN ON</button>
+<button onclick="turnOff()">TURN OFF</button>
+
+<p>Status: <span id="lampStatus">OFF</span></p>
+
+<h2>LCD Message</h2>
+
+<input type="text" id="lcdMessage" placeholder="Enter message">
+
+<button onclick="sendLCD()">SEND TO LCD</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
