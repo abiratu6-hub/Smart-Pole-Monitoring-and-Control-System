@@ -5,3 +5,5 @@ export function turnOn() {
 export function turnOff() {
     document.getElementById("lampStatus").textContent = "OFF";
 }
+window.turnOn = turnOn;
+window.turnOff = turnOff;
