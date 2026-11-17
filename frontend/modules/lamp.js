@@ -1,3 +1,7 @@
-function controlLamp(status) {
-    console.log("Lamp status:", status);
+export function turnOn() {
+    document.getElementById("lampStatus").textContent = "ON";
+}
+
+export function turnOff() {
+    document.getElementById("lampStatus").textContent = "OFF";
 }
