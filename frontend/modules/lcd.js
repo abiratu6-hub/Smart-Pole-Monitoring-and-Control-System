@@ -7,3 +7,4 @@ export function sendLCD() {
         alert("LCD Message: " + message);
     }
 }
+window.sendLCD = sendLCD;
