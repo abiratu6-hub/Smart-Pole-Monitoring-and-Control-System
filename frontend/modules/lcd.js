@@ -1,4 +1,9 @@
+export function sendLCD() {
+    let message = document.getElementById("lcdMessage").value;
 
-function updateLCD(message) {
-    console.log("LCD message:", message);
+    if (message === "") {
+        alert("Please enter a message");
+    } else {
+        alert("LCD Message: " + message);
+    }
 }
